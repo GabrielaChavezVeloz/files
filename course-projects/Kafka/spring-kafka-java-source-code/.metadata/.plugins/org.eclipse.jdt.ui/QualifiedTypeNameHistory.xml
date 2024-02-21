@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.course.kafka.producer.EmployeeJsonProducer"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.SerializationFeature"/>
+    <fullyQualifiedTypeName name="com.course.kafka.producer.PurchaseRequestProducer"/>
+    <fullyQualifiedTypeName name="com.course.kafka.entity.PurchaseRequest"/>
+    <fullyQualifiedTypeName name="com.course.kafka.producer.PaymentRequestProducer"/>
+    <fullyQualifiedTypeName name="com.course.kafka.entity.PaymentRequest"/>
+    <fullyQualifiedTypeName name="com.course.kafka.producer.FoodOrderProducer"/>
+    <fullyQualifiedTypeName name="com.course.kafka.producer.SimpleNumberProducer"/>
+    <fullyQualifiedTypeName name="com.course.kafka.producer.ImageProducer"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="com.course.kafka.broker.producer.Avro01Producer"/>
+    <fullyQualifiedTypeName name="com.course.avro.data.Avro01"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ThreadLocalRandom"/>
+    <fullyQualifiedTypeName name="com.course.avro.data.Avro02"/>
+    <fullyQualifiedTypeName name="com.course.avro.data.Avro02.Builder"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.math.RoundingMode"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package com.ecommerce.udemy.model;
+
+public class CheckoutMessage {
+
+}

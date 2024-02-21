@@ -1,0 +1,51 @@
+package com.springcloudgateway;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.web.reactive.server.WebTestClient;
+
+
+@SpringBootTest(webEnvironment = RANDOM_PORT,
+properties = {"httpbin=http://localhost:${wiremock.server.port}"})
+class SpringcloudGatewayApplicationTests {
+	
+	@Autowired
+	private WebTestClient webClient;
+
+	@Test
+	void contextLoads() {
+		/*List<String> categories = Arrays.asList("Toys", "Electronics", "Art", "Music", "Apparel", "Jewelry");
+
+        when(service.getAllSupportedCategories()).thenReturn(categories);
+
+        mockMvc.perform(get("/categories"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(categories.stream().collect(Collectors.joining(","))));
+                */
+		
+		String categories = "toys,electronics,art,music,apparel,jewelry";
+        
+        
+        webClient.get()
+        .uri("http://localhost:8090/categories")
+        .exchange()
+        .expectBody()
+        .consumeWith((result) -> {
+            String body = new String(result.getResponseBody());
+            assertEquals("/categories", body);
+        });
+	}
+
+}

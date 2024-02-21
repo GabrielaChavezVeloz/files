@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ecommerce.udemy.model.EnrrolledUsers&apos; to &apos;EnrolledUsers&apos;&#x0D;&#x0A;- Original project: &apos;courses-service&apos;&#x0D;&#x0A;- Original element: &apos;com.ecommerce.udemy.model.EnrrolledUsers&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ecommerce.udemy.model.EnrolledUsers&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EnrrolledUsers&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ecommerce.udemy.model{EnrrolledUsers.java[EnrrolledUsers" matchStrategy="1" name="EnrolledUsers" qualified="false" references="true" similarDeclarations="false" stamp="1680561628096" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,23 @@
+var num = 20;
+var pi = 3.14;
+var phrase = "Success is the best revenge";
+var Days;
+(function (Days) {
+    Days[Days["Monday"] = 0] = "Monday";
+    Days[Days["Tuesday"] = 1] = "Tuesday";
+    Days[Days["Wednesday"] = 2] = "Wednesday";
+    Days[Days["Thursday"] = 3] = "Thursday";
+    Days[Days["Friday"] = 4] = "Friday";
+    Days[Days["Saturday"] = 5] = "Saturday";
+    Days[Days["Sunday"] = 6] = "Sunday";
+})(Days || (Days = {}));
+console.log(num);
+console.log(pi);
+console.log(phrase);
+console.log(Days[0]);
+console.log(Days[1]);
+console.log(Days[2]);
+console.log(Days[3]);
+console.log(Days[4]);
+console.log(Days[5]);
+console.log(Days[6]);

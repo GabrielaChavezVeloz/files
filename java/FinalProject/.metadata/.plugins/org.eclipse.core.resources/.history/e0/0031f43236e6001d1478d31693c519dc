@@ -1,0 +1,12 @@
+package com.ecommerce.udemy.services;
+
+import com.ecommerce.udemy.repositories.OrderRepository;
+
+public class OrderService {
+
+	private OrderRepository orderRepository;
+	
+	public List<Order> createOrder(OrderMessage orderMessage){
+		
+	}
+}

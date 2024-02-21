@@ -1,0 +1,8 @@
+online\store\model\ProductTest.class
+online\store\model\CheckoutRequestTest.class
+online\store\model\OrderTest.class
+online\store\services\ProductsServiceTest.class
+online\store\controllers\CheckoutControllerTest.class
+online\store\services\OrdersServiceTest.class
+online\store\controllers\HomepageControllerTest.class
+online\store\model\ProductCategoryTest.class

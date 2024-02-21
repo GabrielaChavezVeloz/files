@@ -1,0 +1,40 @@
+.student-content{
+    padding: 30px;
+    align-items: center;
+}
+
+mat-form-field{
+    padding: 5px;
+    padding-left: 80px;
+}
+
+mat-card-title {
+    padding: 10PX;
+}
+
+.student-table {
+    width: 100%;
+}
+  
+.mat-column-id {
+    width: 20px;
+    border-right: 1px solid currentColor;
+    padding-right: 12px;
+    text-align: center;
+}
+
+.mat-column-firstName {
+    padding-left: 16px;
+    font-size: 15px;
+}
+    
+.mat-column-lastName {
+    padding-left: 16px;
+    font-size: 15px;
+}
+  
+.mat-column-age {
+    font-style: italic;
+}
+  
+ 

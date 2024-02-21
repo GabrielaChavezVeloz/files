@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MoneyTest" project="tdd-by-example-master" tests="9" started="9" failures="0" errors="1" ignored="0">
+  <testsuite name="guru.springframework.MoneyTest" time="0.016" displayname="MoneyTest" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]">
+    <testcase name="testReduceSum" classname="guru.springframework.MoneyTest" time="0.004" displayname="testReduceSum()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testReduceSum()]"/>
+    <testcase name="testSimpleAddition" classname="guru.springframework.MoneyTest" time="0.0" displayname="testSimpleAddition()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testSimpleAddition()]"/>
+    <testcase name="testMultiplication" classname="guru.springframework.MoneyTest" time="0.0" displayname="testMultiplication()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testMultiplication()]"/>
+    <testcase name="testReduceMoney" classname="guru.springframework.MoneyTest" time="0.0" displayname="testReduceMoney()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testReduceMoney()]"/>
+    <testcase name="testPlusReturnSum" classname="guru.springframework.MoneyTest" time="0.0" displayname="testPlusReturnSum()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testPlusReturnSum()]"/>
+    <testcase name="testIdentityRate" classname="guru.springframework.MoneyTest" time="0.0" displayname="testIdentityRate()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testIdentityRate()]"/>
+    <testcase name="testCurrency" classname="guru.springframework.MoneyTest" time="0.0" displayname="testCurrency()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testCurrency()]"/>
+    <testcase name="testReduceMoneyDifferentCurrency" classname="guru.springframework.MoneyTest" time="0.006" displayname="testReduceMoneyDifferentCurrency()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testReduceMoneyDifferentCurrency()]">
+      <error>java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null&#13;
+	at guru.springframework.Bank.rate(Bank.java:18)&#13;
+	at guru.springframework.Money.reduce(Money.java:36)&#13;
+	at guru.springframework.Bank.reduce(Bank.java:10)&#13;
+	at guru.springframework.MoneyTest.testReduceMoneyDifferentCurrency(MoneyTest.java:71)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testEqualityDollar" classname="guru.springframework.MoneyTest" time="0.0" displayname="testEqualityDollar()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testEqualityDollar()]"/>
+  </testsuite>
+</testrun>

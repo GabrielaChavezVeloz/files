@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MoneyTest.testReduceMoneyDifferentCurrency" project="tdd-by-example-master" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="guru.springframework.MoneyTest" incomplete="true" displayname="MoneyTest" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]">
+    <testcase name="testReduceMoneyDifferentCurrency" classname="guru.springframework.MoneyTest" incomplete="true" displayname="testReduceMoneyDifferentCurrency()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testReduceMoneyDifferentCurrency()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,41 @@
+package com.ecommerce.udemy.services;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.verify;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.ecommerce.udemy.model.Order;
+import com.ecommerce.udemy.repositories.OrderRepository;
+
+
+public class OrderServiceTest {
+
+	@Mock
+    OrderRepository orderRepository;
+
+    @InjectMocks
+    OrderService service;
+	
+	@Test
+	void createOrderTest() {
+		
+		/*CartDto cart = new CartDto(1L, 1L, 1L, "java web", 100f, true);
+		List<CartDto> carts = new ArrayList<CartDto>();
+		carts.add(cart);
+		CartListDto cartList = new CartListDto();
+		cartList.setCartList(carts);
+		OrderMessage orderMessage = new OrderMessage(cartList, 100);*/
+		
+		Order order = new Order(1L, 1L, 1L, "java web", 100f, null, 100);
+		
+		Order orderSaved = orderRepository.save(order);
+				
+		assertThat(orderSaved).isNotNull();
+	
+		verify(orderRepository).save(order);
+		
+	}
+}

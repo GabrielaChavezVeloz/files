@@ -1,0 +1,59 @@
+package test;
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'timeConversion' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts STRING s as parameter.
+     */
+
+    public static String timeConversion(String s) {
+    // Write your code here
+    	
+    	String [] numbers = s.split(":");
+    	int hour = 0;
+    	
+    	if((s.contains("PM") || s.contains("pm")) && !numbers[0].equals("12")) {
+    		hour = Integer.parseInt(numbers[0]);
+    		hour += 12;
+    		s = s.substring(2, s.length());
+    		s = String.valueOf(hour) + s;
+    	}
+    	
+    	if((s.contains("AM") || s.contains("am")) && numbers[0].equals("12")) {
+    		s = s.substring(2, s.length());
+    		s = "00"+s;
+    	}
+    	
+    	
+    	s = s.substring(0, s.length()-2);
+    	
+    	return s;
+    }
+
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        
+
+        String result = Result.timeConversion("04:59:59AM");
+        
+        System.out.println(result);
+        
+    }
+}

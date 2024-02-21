@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Certificado="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" Descuento="0.00" Fecha="2022-12-06T11:07:02" Folio="4025" FormaPago="28" LugarExpedicion="54769" MetodoPago="PUE" Moneda="MXN" NoCertificado="00001000000504107012" Sello="BP0sCb11DVvFLsw9bM2WFnQlY7P8xwRuhTNoJcoCEaMSLQhus+pVn7X6V+e4N+4nwdCV1ON8bZemWkQno1lLK90lk9wJ18EwZWKL5ca6VKQeESvZN9smJtkc4H/4mm+sZ350DGczbBWf86xpiU4luh51KtXg5kOwpDzEEOQ5FTdMjxG8aKSF9DOlsfYRA6xD0gS+GYUKUzo+DvsBL2j0piL2QNJu0CtU1/fPjR6Ysvd98dx/U5ZjqyfAJr+av2y5+hcj6PHm/tNV87vMqgVR69u3BDbVm2X4NTYt17On9FuCrJqlhSzErQ4Bab6XNvQTM7iVHz0ejgRw+ukZ9yFF/Q==" Serie="S02" SubTotal="1804.30" TipoCambio="1" TipoDeComprobante="I" Total="2093.00" Version="3.3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd"><cfdi:Emisor Nombre="GRUPO EMPRESARIAL S.J." RegimenFiscal="601" Rfc="GES021031BL9"/><cfdi:Receptor Nombre="DCG DELIVERY CENTER MEXICO" Rfc="DDC160128LE4" UsoCFDI="G03"/><cfdi:Conceptos><cfdi:Concepto Cantidad="1.00" ClaveProdServ="53102300" ClaveUnidad="H87" Descripcion="1010/ PROKENNEX/ 5" Descuento="0.00" Importe="145.69" NoIdentificacion="1026141" Unidad="PIEZA" ValorUnitario="145.69"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="145.69" Importe="23.31" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto><cfdi:Concepto Cantidad="1.00" ClaveProdServ="53101800" ClaveUnidad="H87" Descripcion="RUNN/ PROKENNEX/ 5" Descuento="0.00" Importe="464.66" NoIdentificacion="1041456" Unidad="PIEZA" ValorUnitario="464.66"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="464.66" Importe="74.34" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto><cfdi:Concepto Cantidad="1.00" ClaveProdServ="53101900" ClaveUnidad="SET" Descripcion="8500/ HOLLY LAND/ 4" Descuento="0.00" Importe="309.48" NoIdentificacion="1048267" Unidad="CONJUNTO" ValorUnitario="309.48"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="309.48" Importe="49.52" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto><cfdi:Concepto Cantidad="1.00" ClaveProdServ="53101900" ClaveUnidad="SET" Descripcion="8500/ HOLLY LAND/ 4" Descuento="0.00" Importe="309.48" NoIdentificacion="1048266" Unidad="CONJUNTO" ValorUnitario="309.48"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="309.48" Importe="49.52" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto><cfdi:Concepto Cantidad="1.00" ClaveProdServ="53101900" ClaveUnidad="SET" Descripcion="CU01/ LOVE TO LOUNGE/ 4" Descuento="0.00" Importe="292.24" NoIdentificacion="1046859" Unidad="CONJUNTO" ValorUnitario="292.24"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="292.24" Importe="46.76" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto><cfdi:Concepto Cantidad="1.00" ClaveProdServ="53101500" ClaveUnidad="H87" Descripcion="1111/ PROKENNEX/ 3" Descuento="0.00" Importe="197.41" NoIdentificacion="1027047" Unidad="PIEZA" ValorUnitario="197.41"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="197.41" Importe="31.59" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto><cfdi:Concepto Cantidad="1.00" ClaveProdServ="01010101" ClaveUnidad="H87" Descripcion="GUIA/ USO GENERICO/ 48" Descuento="0.00" Importe="25.86" NoIdentificacion="977370" Unidad="PIEZA" ValorUnitario="25.86"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="25.86" Importe="4.14" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto><cfdi:Concepto Cantidad="1.00" ClaveProdServ="80141706" ClaveUnidad="E48" Descripcion="SERVICIO DE INTERMEDIACIÓN DE PRODUCTOS" Descuento="0.00" Importe="59.48" Unidad="UNIDAD DE SERVICIO" ValorUnitario="59.48"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="59.48" Importe="9.52" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="288.70"><cfdi:Traslados><cfdi:Traslado Importe="288.70" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" FechaTimbrado="2022-12-06T11:11:06" NoCertificadoSAT="00001000000506248998" RfcProvCertif="LEV031201SE6" SelloCFD="BP0sCb11DVvFLsw9bM2WFnQlY7P8xwRuhTNoJcoCEaMSLQhus+pVn7X6V+e4N+4nwdCV1ON8bZemWkQno1lLK90lk9wJ18EwZWKL5ca6VKQeESvZN9smJtkc4H/4mm+sZ350DGczbBWf86xpiU4luh51KtXg5kOwpDzEEOQ5FTdMjxG8aKSF9DOlsfYRA6xD0gS+GYUKUzo+DvsBL2j0piL2QNJu0CtU1/fPjR6Ysvd98dx/U5ZjqyfAJr+av2y5+hcj6PHm/tNV87vMqgVR69u3BDbVm2X4NTYt17On9FuCrJqlhSzErQ4Bab6XNvQTM7iVHz0ejgRw+ukZ9yFF/Q==" SelloSAT="alO+WkGxrZcx6TkW910cx+Lhxb0Lncqrrtm9gIeqbSuz3pjLAoCDjFgFLSrZ8S7/zQluonEfqvtfBFkiJUwjRCgDTzFDs3ZehdEriB2A/R9bmDLQ3ePwQ5rJrSqMulQZxivJLeCJGwhHimmIX9qv3SJiJ1vkilOHbqv8N73bqvmJMycMia9GSpxA4ZOQVO+2pHxM7YpB2EePpg01m8LCi7ZX58qey5OqoyvzxfP+PI6Z32MrWxo/LAK42pzi2lQWtCyt1BQvtpfNpQUHWtfZru8Mnh953KSg0CR3ejWpPQfg76V1wCw3hlmAyXgm5Z0PS2kgwaOmNPeS7TZuhqzzSw==" UUID="C8CF9B1C-EE3E-469E-AFF8-B3828C2A90F7" Version="1.1" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"/></cfdi:Complemento><cfdi:Addenda><lev1add:EDCINVOICE xmlns:lev1add="http://www.edcinvoice.com/lev1add" xsi:schemaLocation="http://www.edcinvoice.com/lev1add http://www.edcinvoice.com/lev1add/lev1add.xsd">[H0C_Generales]|DDC160128LE4|904772|3.3||00001000000504107012|D01|P|
+[H1F_Comprobante]|3.3|S02|4025|2022-12-06T11:07:02|28||1804.30|0.00|MXN|1|2093.00|I|PUE|54769|||||||||||||||||||||
+[H1C_Comprobante]|||||||Original||||||0.00|||||||||||||||D01|P|DOS MIL NOVENTA Y TRES  PESOS 00/100 M.N.||||||||||||||||||||||FACTURA COMERCIAL|||||||||||||
+[H2F_CfdiRelacionados]|||||
+[H2C_CfdiRelacionados]|||||||||||||||||
+[H2-1F_CfdiRelacionado]|||||
+[H2-1C_CfdiRelacionado]|||||
+[H3F_Emisor]|GES021031BL9|GRUPO EMPRESARIAL S.J.|601|||||||||||||||||
+[H3C_Emisor]|||||||||||||||||||||||||||||||||
+[H3-1C_EmisorDomFiscal]|||||||||||||||||||||||||
+[H3-2C_EmisorDomExped]||||||||||||||||||||||||||||
+[H4F_Receptor]|DDC160128LE4|DCG DELIVERY CENTER MEXICO|||G03||||||||||||||||||||
+[H4C_Receptor]|||||||||||||||||||||||||||
+[H4-1C_ReceptorDom]|||||||||||||||||||||||||
+[H4-2C_ReceptorEntrega]|||||||||||||||||||||||||||||||||||
+[D1F_Detalle]|53102300|1026141|1.00|H87|PIEZA|1010/ PROKENNEX/ 5|145.69|145.69|0.00|||||||||||||||||||||
+[D1C_Detalle]||||||||||||||||169.00|145.69|||0.00|||||||||||||16.00|23.31|||||||||||||||||||||||||||||||||||||||||||||||
+[D2F_ImpTrasladosTraslado]|145.69|002|Tasa|0.160000|23.31|||||
+[D2C_ImpTrasladosTraslado]||||||||||
+[D3F_ImpRetencionesRetencion]||||||||||
+[D3C_ImpRetencionesRetencion]||||||||||
+[D4F_InformacionAduanera]|||||
+[D4C_InformacionAduanera]|||||
+[D5F_CuentaPredial]|||||
+[D5C_CuentaPredial]|||||
+[D6F_Parte]||||||||||
+[D6C_Parte]||||||||||
+[D7F_ParteInfAduanera]|||||
+[D7C_ParteInfAduanera]|||||
+[D1F_Detalle]|53101800|1041456|1.00|H87|PIEZA|RUNN/ PROKENNEX/ 5|464.66|464.66|0.00|||||||||||||||||||||
+[D1C_Detalle]||||||||||||||||539.00|464.66|||0.00|||||||||||||16.00|74.34|||||||||||||||||||||||||||||||||||||||||||||||
+[D2F_ImpTrasladosTraslado]|464.66|002|Tasa|0.160000|74.34|||||
+[D2C_ImpTrasladosTraslado]||||||||||
+[D3F_ImpRetencionesRetencion]||||||||||
+[D3C_ImpRetencionesRetencion]||||||||||
+[D4F_InformacionAduanera]|||||
+[D4C_InformacionAduanera]|||||
+[D5F_CuentaPredial]|||||
+[D5C_CuentaPredial]|||||
+[D6F_Parte]||||||||||
+[D6C_Parte]||||||||||
+[D7F_ParteInfAduanera]|||||
+[D7C_ParteInfAduanera]|||||
+[D1F_Detalle]|53101900|1048267|1.00|SET|CONJUNTO|8500/ HOLLY LAND/ 4|309.48|309.48|0.00|||||||||||||||||||||
+[D1C_Detalle]||||||||||||||||359.00|309.48|||0.00|||||||||||||16.00|49.52|||||||||||||||||||||||||||||||||||||||||||||||
+[D2F_ImpTrasladosTraslado]|309.48|002|Tasa|0.160000|49.52|||||
+[D2C_ImpTrasladosTraslado]||||||||||
+[D3F_ImpRetencionesRetencion]||||||||||
+[D3C_ImpRetencionesRetencion]||||||||||
+[D4F_InformacionAduanera]|||||
+[D4C_InformacionAduanera]|||||
+[D5F_CuentaPredial]|||||
+[D5C_CuentaPredial]|||||
+[D6F_Parte]||||||||||
+[D6C_Parte]||||||||||
+[D7F_ParteInfAduanera]|||||
+[D7C_ParteInfAduanera]|||||
+[D1F_Detalle]|53101900|1048266|1.00|SET|CONJUNTO|8500/ HOLLY LAND/ 4|309.48|309.48|0.00|||||||||||||||||||||
+[D1C_Detalle]||||||||||||||||359.00|309.48|||0.00|||||||||||||16.00|49.52|||||||||||||||||||||||||||||||||||||||||||||||
+[D2F_ImpTrasladosTraslado]|309.48|002|Tasa|0.160000|49.52|||||
+[D2C_ImpTrasladosTraslado]||||||||||
+[D3F_ImpRetencionesRetencion]||||||||||
+[D3C_ImpRetencionesRetencion]||||||||||
+[D4F_InformacionAduanera]|||||
+[D4C_InformacionAduanera]|||||
+[D5F_CuentaPredial]|||||
+[D5C_CuentaPredial]|||||
+[D6F_Parte]||||||||||
+[D6C_Parte]||||||||||
+[D7F_ParteInfAduanera]|||||
+[D7C_ParteInfAduanera]|||||
+[D1F_Detalle]|53101900|1046859|1.00|SET|CONJUNTO|CU01/ LOVE TO LOUNGE/ 4|292.24|292.24|0.00|||||||||||||||||||||
+[D1C_Detalle]||||||||||||||||339.00|292.24|||0.00|||||||||||||16.00|46.76|||||||||||||||||||||||||||||||||||||||||||||||
+[D2F_ImpTrasladosTraslado]|292.24|002|Tasa|0.160000|46.76|||||
+[D2C_ImpTrasladosTraslado]||||||||||
+[D3F_ImpRetencionesRetencion]||||||||||
+[D3C_ImpRetencionesRetencion]||||||||||
+[D4F_InformacionAduanera]|||||
+[D4C_InformacionAduanera]|||||
+[D5F_CuentaPredial]|||||
+[D5C_CuentaPredial]|||||
+[D6F_Parte]||||||||||
+[D6C_Parte]||||||||||
+[D7F_ParteInfAduanera]|||||
+[D7C_ParteInfAduanera]|||||
+[D1F_Detalle]|53101500|1027047|1.00|H87|PIEZA|1111/ PROKENNEX/ 3|197.41|197.41|0.00|||||||||||||||||||||
+[D1C_Detalle]||||||||||||||||229.00|197.41|||0.00|||||||||||||16.00|31.59|||||||||||||||||||||||||||||||||||||||||||||||
+[D2F_ImpTrasladosTraslado]|197.41|002|Tasa|0.160000|31.59|||||
+[D2C_ImpTrasladosTraslado]||||||||||
+[D3F_ImpRetencionesRetencion]||||||||||
+[D3C_ImpRetencionesRetencion]||||||||||
+[D4F_InformacionAduanera]|||||
+[D4C_InformacionAduanera]|||||
+[D5F_CuentaPredial]|||||
+[D5C_CuentaPredial]|||||
+[D6F_Parte]||||||||||
+[D6C_Parte]||||||||||
+[D7F_ParteInfAduanera]|||||
+[D7C_ParteInfAduanera]|||||
+[D1F_Detalle]|01010101|977370|1.00|H87|PIEZA|GUIA/ USO GENERICO/ 48|25.86|25.86|0.00|||||||||||||||||||||
+[D1C_Detalle]||||||||||||||||30.00|25.86|||0.00|||||||||||||16.00|4.14|||||||||||||||||||||||||||||||||||||||||||||||
+[D2F_ImpTrasladosTraslado]|25.86|002|Tasa|0.160000|4.14|||||
+[D2C_ImpTrasladosTraslado]||||||||||
+[D3F_ImpRetencionesRetencion]||||||||||
+[D3C_ImpRetencionesRetencion]||||||||||
+[D4F_InformacionAduanera]|||||
+[D4C_InformacionAduanera]|||||
+[D5F_CuentaPredial]|||||
+[D5C_CuentaPredial]|||||
+[D6F_Parte]||||||||||
+[D6C_Parte]||||||||||
+[D7F_ParteInfAduanera]|||||
+[D7C_ParteInfAduanera]|||||
+[D1F_Detalle]|80141706||1.00|E48|UNIDAD DE SERVICIO|SERVICIO DE INTERMEDIACIÓN DE PRODUCTOS|59.48|59.48|0.00|||||||||||||||||||||
+[D1C_Detalle]||||||||||||||||69.00|59.48|||0.00|||||||||||||16.00|9.52|||||||||||||||||||||||||||||||||||||||||||||||
+[D2F_ImpTrasladosTraslado]|59.48|002|Tasa|0.160000|9.52|||||
+[D2C_ImpTrasladosTraslado]||||||||||
+[D3F_ImpRetencionesRetencion]||||||||||
+[D3C_ImpRetencionesRetencion]||||||||||
+[D4F_InformacionAduanera]|||||
+[D4C_InformacionAduanera]|||||
+[D5F_CuentaPredial]|||||
+[D5C_CuentaPredial]|||||
+[D6F_Parte]||||||||||
+[D6C_Parte]||||||||||
+[D7F_ParteInfAduanera]|||||
+[D7C_ParteInfAduanera]|||||
+[I1F_Impuestos]||288.70||||||||
+[I1C_Impuestos]||||||||||
+[I2F_Retencion]||||||||||
+[I2C_Retencion]||||||||||
+[I3F_Trasladado]|002|Tasa|0.160000|288.70||||||
+[I3C_Trasladado]||||||||||
+[SC_Sumario]|1804.30|0.00|||||288.70||2093.00|1804.30|8|||||||||||||||||||||||||||||||||||||||||
+[CO]|||3.3|S02|4025|2022-12-06T11:07:02|28|00001000000504107012|1804.30|0.00|MXN|1|2093.00|I|PUE|54769|GES021031BL9|GRUPO EMPRESARIAL S.J.|601|DDC160128LE4|DCG DELIVERY CENTER MEXICO|G03|53102300|1026141|1.00|H87|PIEZA|1010/ PROKENNEX/ 5|145.69|145.69|0.00|145.69|002|Tasa|0.160000|23.31|53101800|104|
+[CO]|1456|1.00|H87|PIEZA|RUNN/ PROKENNEX/ 5|464.66|464.66|0.00|464.66|002|Tasa|0.160000|74.34|53101900|1048267|1.00|SET|CONJUNTO|8500/ HOLLY LAND/ 4|309.48|309.48|0.00|309.48|002|Tasa|0.160000|49.52|53101900|1048266|1.00|SET|CONJUNTO|8500/ HOLLY LAND/ 4|309.48|309.48|0.00|309.48|002|Tasa|0.160000|49|
+[CO]|.52|53101900|1046859|1.00|SET|CONJUNTO|CU01/ LOVE TO LOUNGE/ 4|292.24|292.24|0.00|292.24|002|Tasa|0.160000|46.76|53101500|1027047|1.00|H87|PIEZA|1111/ PROKENNEX/ 3|197.41|197.41|0.00|197.41|002|Tasa|0.160000|31.59|01010101|977370|1.00|H87|PIEZA|GUIA/ USO GENERICO/ 48|25.86|25.86|0.00|25.86|002||
+[CO]|Tasa|0.160000|4.14|80141706|1.00|E48|UNIDAD DE SERVICIO|SERVICIO DE INTERMEDIACIÓN DE PRODUCTOS|59.48|59.48|0.00|59.48|002|Tasa|0.160000|9.52|002|Tasa|0.160000|288.70|288.70|||
+[SE]|BP0sCb11DVvFLsw9bM2WFnQlY7P8xwRuhTNoJcoCEaMSLQhus+pVn7X6V+e4N+4nwdCV1ON8bZemWkQno1lLK90lk9wJ18EwZWKL5ca6VKQeESvZN9smJtkc4H/4mm+sZ350DGczbBWf86xpiU4luh51KtXg5kOwpDzEEOQ5FTdMjxG8aKSF9DOlsfYRA6xD0gS+GYUKUzo+DvsBL2j0piL2QNJu0CtU1/fPjR6Ysvd98dx/U5ZjqyfAJr+av2y5+hcj6PHm/tNV87vMqgVR69u3BDbVm2X4NTYt17On9FuCrJqlhSzErQ4Bab6XNvQTM7iVHz0ejgRw+ukZ9yFF/Q==</lev1add:EDCINVOICE>
+  </cfdi:Addenda>
+</cfdi:Comprobante>

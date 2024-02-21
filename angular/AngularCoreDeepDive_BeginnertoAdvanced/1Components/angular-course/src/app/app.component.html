@@ -1,0 +1,51 @@
+<div class="top-menu">
+
+    <img class="logo"
+         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+
+</div>
+
+<!--<div class="demo">
+    <div>Start Date: {{startDate | date: 'MMM dd yyyy' }}</div>
+    <div >{{title | titlecase}}</div>
+    <div >{{price | currency: 'GBP'}}</div>
+    <div >Percentage: {{rate | percent}}</div>
+</div>
+{{ courses | json}}
+
+
+<div *ngFor="let pair of course | keyvalue">
+    {{pair.key + ': ' + pair.value}}
+</div>
+
+<course-card *ngFor="let course of courses| slice:0:2; index as i;"
+        (courseSelected)="onCourseSelected($event)" 
+            [course]="course" [cardIndex]="i+1">
+    </course-card>
+
+<button (click)="onCourseEdited()">Edit Courses</button>
+-->
+
+<div class="courses" *ngIf=" courses[0] as course">
+
+    <ng-template #blankImage let-courseName="description" >
+        <p class="warn">{{courseName}} has no image yet.</p>
+        <img src="/assets/empty-image.png">
+    </ng-template>
+
+    <course-card 
+        (courseSelected)="onCourseSelected($event)" 
+            [course]="course" [noImageTpl]="blankImage">
+
+        <course-image [src]="course.iconUrl"></course-image>
+
+        <div class="course-description">
+            {{ course.longDescription }}
+        </div>
+
+    </course-card>
+
+
+</div>
+
+

@@ -1,0 +1,30 @@
+package com.ecommerce.udemy.dto;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class CartDto {
+
+	private Long id;
+	private Long idUser;
+	private Long idCourse;
+	private String nameCourse;
+    private Date additionDate;
+	private Boolean isActive;
+}

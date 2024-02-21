@@ -1,0 +1,36 @@
+package com.ecommerce.udemy.kafka;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+import com.ecommerce.udemy.mappers.OrderMapper;
+import com.ecommerce.udemy.model.Order;
+import com.ecommerce.udemy.model.OrderMessage;
+import com.ecommerce.udemy.services.OrderService;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class KafkaConsumerService {
+
+	@Autowired
+	OrderService orderService;
+	
+	@Autowired
+	private OrderMapper orderMapper;
+	
+	@KafkaListener(topics = "t-cart", containerFactory = "cartKafkaListenerContainerFactory")
+    public void checkoutListener(OrderMessage checkoutMessage) throws Exception {
+        log.info("Received a new checkout message for Order generation: " + checkoutMessage);
+        List<Order> orders = orderService.createOrder(checkoutMessage);
+        log.info("Order generated ID: " + orders.get(0).getOrderNumber());
+        //now we create a message and publish to topic, so /cart and /courses services subcribers consume it
+        log.info("Generating a OrderMessage!");
+        
+        //createOrderMessage(order);
+    }
+}

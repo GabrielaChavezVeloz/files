@@ -1,0 +1,71 @@
+package com.springcloudgateway;
+
+import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
+import static com.github.tomakehurst.wiremock.client.WireMock.get;
+import static com.github.tomakehurst.wiremock.client.WireMock.stubFor;
+import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.cloud.contract.wiremock.AutoConfigureWireMock;
+import org.springframework.test.web.reactive.server.WebTestClient;
+
+
+
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
+properties = {"httpbin=http://localhost:${wiremock.server.port}"})
+@AutoConfigureWireMock(port = 0)
+class SpringcloudGatewayApplicationTests {
+	
+	@Autowired
+	private WebTestClient webClient;
+
+	@Test
+	void contextLoads() {
+		/*List<String> categories = Arrays.asList("Toys", "Electronics", "Art", "Music", "Apparel", "Jewelry");
+
+        when(service.getAllSupportedCategories()).thenReturn(categories);
+
+        mockMvc.perform(get("/categories"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(categories.stream().collect(Collectors.joining(","))));
+                
+		
+		String categories = "toys,electronics,art,music,apparel,jewelry";
+        
+        
+        webClient.get()
+        .uri("/categories")
+        .exchange()
+        .expectBody()
+        .consumeWith((result) -> {
+            String body = new String(result.getResponseBody());
+            assertEquals("/categories", body);
+        });
+	}*/
+		
+		String productTest = "{\"products\":[{\"id\":7,\"name\":\"Toy Car\",\"description\":\"Great toy for boys 1-10 years old. Fun and educational\",\"imageFileName\":\"toy-car.jpeg\",\"priceUSD\":1.0,\"category\":\"toys\"}]}";
+		String categories = "toys,electronics,art,music,apparel,jewelry";
+		
+		//Stubs
+	    stubFor(get(urlEqualTo("/categories"))
+	        .willReturn(aResponse()
+	          .withHeader("Content-Type", "text/plain")));
+		
+		stubFor(get(urlEqualTo("/deals_of_the_day/1"))
+			      .willReturn(aResponse()
+			        .withBody("")));
+	    
+
+		 webClient
+	      .get().uri("/categories")
+	      .exchange()
+	      .expectStatus().isOk()
+	      .expectBody()
+	      .consumeWith(
+	        response -> assertThat(response.getResponseBody()).isEqualTo(categories.getBytes()));
+	}
+
+}

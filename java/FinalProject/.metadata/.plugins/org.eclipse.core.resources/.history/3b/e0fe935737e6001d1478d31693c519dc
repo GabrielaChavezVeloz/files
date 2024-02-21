@@ -1,0 +1,16 @@
+package com.ecommerce.udemy.services;
+
+import java.util.List;
+
+import com.ecommerce.udemy.model.Order;
+import com.ecommerce.udemy.model.OrderMessage;
+import com.ecommerce.udemy.repositories.OrderRepository;
+
+public class OrderService {
+
+	private OrderRepository orderRepository;
+	
+	public List<Order> createOrder(OrderMessage orderMessage){
+		List<Order> orders = new ArrayList(Order);
+	}
+}

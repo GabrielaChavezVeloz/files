@@ -1,0 +1,9 @@
+0
+7
+kafka-stream-1675981897433-KTABLE-AGGREGATE-STATE-STORE-0000000035-changelog 0 2
+kafka-stream-1675981897433-t-commodity-web-vote-one-username-layout-STATE-STORE-0000000025-changelog 0 4
+kafka-stream-1675981897433-t-commodity-web-vote-one-username-color-STATE-STORE-0000000019-changelog 0 4
+kafka-stream-1675981897433-KTABLE-AGGREGATE-STATE-STORE-0000000042-changelog 0 2
+t-commodity-web-vote-one-username-layout 0 5
+t-commodity-web-vote-one-username-color 0 5
+kafka-stream-1675981897433-KTABLE-MERGE-STATE-STORE-0000000028-changelog 0 3

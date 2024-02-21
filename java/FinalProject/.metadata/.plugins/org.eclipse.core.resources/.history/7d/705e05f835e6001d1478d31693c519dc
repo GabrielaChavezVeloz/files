@@ -1,0 +1,8 @@
+package com.ecommerce.udemy.services;
+
+import com.ecommerce.udemy.repositories.OrderRepository;
+
+public class OrderService {
+
+	private OrderRepository orderRepository;
+}

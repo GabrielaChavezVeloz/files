@@ -1,0 +1,176 @@
+import java.io.*;
+import java.math.*;
+import java.text.*;
+import java.util.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    /*
+     * Complete the getMoneySpent function below.
+     */
+    static int getMoneySpent(int[] keyboards, int[] drives, int b) {
+        /*
+         * Write your code here.
+         */
+         long sumK = 0;
+         long sumD = 0;
+         int result = -1;
+         
+         List<Integer> keyList = new ArrayList<>();
+         
+         for(int value:keyboards) {
+             keyList.add(value);
+          }
+         
+         List<Integer> driveList = new ArrayList<>();
+         
+         for(int value:drives) {
+             driveList.add(value);
+          }
+         
+         List<Integer> keyList2 = new ArrayList<>(keyList);
+         List<Integer> driveList2 = new ArrayList<>(driveList);
+         
+         
+         
+         int maxK = Collections.max(keyList2);
+         int maxD = Collections.max(driveList2);
+         
+         int minD = Collections.min(driveList2);
+         int minK = Collections.min(keyList2);
+         
+         
+         while((maxK>=b ) && !keyList2.isEmpty()){
+         
+             
+             keyList2.remove(new Integer(maxK));
+             
+             if(!keyList2.isEmpty()) {
+                 maxK = Collections.max(keyList2);
+
+             }
+  
+        
+         }
+         while((maxD>=b ) && !driveList2.isEmpty() ) {
+
+             driveList2.remove(new Integer(maxD));
+             if(!driveList2.isEmpty()) {
+                 maxD = Collections.max(driveList2);
+             }
+        
+         }
+         
+         if(driveList2.isEmpty() || keyList2.isEmpty()) {
+             return -1;
+         }
+         
+        
+         
+         if(maxK+maxD <= b) {
+             result = maxK+maxD;
+         } else {
+                          
+             int tempMaxD = maxD;
+             int tempMaxK = maxK;
+             
+             List<Integer> keyList3 = new ArrayList<>(keyList2);
+             List<Integer> driveList3 = new ArrayList<>(driveList2);
+             
+             int tempSumK = 0;
+             
+             while( !keyList3.isEmpty()) {
+                
+                 
+                 if(tempMaxK+tempMaxD <= b) {
+                     
+                     if(tempSumK < tempMaxK+tempMaxD) {
+                         tempSumK = tempMaxK+tempMaxD;
+                     }
+                     
+                     
+                     keyList3.remove(new Integer(tempMaxK));
+                     if(keyList3.isEmpty()) {
+                         break;
+                     }
+                     tempMaxK = Collections.max(keyList3);
+                     driveList3 = new ArrayList<>(driveList2);
+                     tempMaxD = Collections.max(driveList3);
+                     continue;
+                 }
+             
+                 driveList3.remove(new Integer(tempMaxD));
+                 if(!driveList3.isEmpty()) {
+                     tempMaxD = Collections.max(driveList3);
+                 }
+                 else 
+                 {
+                     keyList3.remove(new Integer(tempMaxK));
+                     tempMaxK = Collections.max(keyList3);
+                     driveList3 = new ArrayList<>(driveList2);
+                     tempMaxD = Collections.max(driveList3);
+                 }
+                 
+                 
+                 
+             }
+             
+             sumK = tempSumK;
+             
+             result = (int) sumK;
+             
+             
+         }
+         
+         return result;
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] bnm = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])*");
+
+        int b = Integer.parseInt(bnm[0]);
+
+        int n = Integer.parseInt(bnm[1]);
+
+        int m = Integer.parseInt(bnm[2]);
+
+        int[] keyboards = new int[n];
+
+        String[] keyboardsItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])*");
+
+        for (int keyboardsItr = 0; keyboardsItr < n; keyboardsItr++) {
+            int keyboardsItem = Integer.parseInt(keyboardsItems[keyboardsItr]);
+            keyboards[keyboardsItr] = keyboardsItem;
+        }
+
+        int[] drives = new int[m];
+
+        String[] drivesItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])*");
+
+        for (int drivesItr = 0; drivesItr < m; drivesItr++) {
+            int drivesItem = Integer.parseInt(drivesItems[drivesItr]);
+            drives[drivesItr] = drivesItem;
+        }
+
+        /*
+         * The maximum amount of money she can spend on a keyboard and USB drive, or -1 if she can't purchase both items
+         */
+
+        int moneySpent = getMoneySpent(keyboards, drives, b);
+
+        bufferedWriter.write(String.valueOf(moneySpent));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}

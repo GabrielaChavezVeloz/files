@@ -1,0 +1,42 @@
+<mat-sidenav-container fullscreen>
+
+    <mat-toolbar color="primary">
+  
+      <div class="toolbar-tools">
+  
+        <a class="menu-item" mat-button routerLink="/students"
+        routerLinkActive="menu-item-active">
+          <span>Students</span>
+        </a>
+  
+        <a class="menu-item" mat-button routerLink="/courses"
+        routerLinkActive="menu-item-active">
+          <span>Courses</span>
+        </a>
+  
+        <a class="menu-item" mat-button routerLink="/projects"
+        routerLinkActive="menu-item-active">
+        <span>Projects</span>
+        </a>
+
+        <a class="menu-item" mat-button routerLink="/studentsbycourses"
+        routerLinkActive="menu-item-active">
+          <span>Students by Courses</span>
+        </a>
+
+        <a class="menu-item" mat-button routerLink="/studentsbyprojects"
+        routerLinkActive="menu-item-active">
+          <span>Students by Projects</span>
+        </a>
+  
+      </div>
+       
+  
+  
+      <div class="filler"></div>  
+  
+    </mat-toolbar>
+  
+    <router-outlet></router-outlet>
+  
+  </mat-sidenav-container>

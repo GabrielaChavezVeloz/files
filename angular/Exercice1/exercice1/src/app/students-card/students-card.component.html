@@ -1,0 +1,26 @@
+
+<div *ngFor="let student of students" #container>
+    <table>
+        <tr>
+            <td>First Name: {{student.firstName}} </td>
+            <td>Last Name: {{student.lastName}} </td>
+            <td>Age: {{student.age}} </td>
+        </tr>
+        
+    </table>
+
+    
+    
+</div>
+
+<div>
+    <h3>Add new student!</h3>
+    <form (ngSubmit)="addStudent()" >
+        
+        Fist Name: <input type="text" [(ngModel)]="newStudent.firstName" name="firstName"><br>
+        Last Name: <input type="text" [(ngModel)]="newStudent.lastName" name="lastName"><br>
+        Age: <input type="text" [(ngModel)]="newStudent.age" name="age"><br>
+        <button type="submit" >Add</button>
+
+    </form>
+</div>

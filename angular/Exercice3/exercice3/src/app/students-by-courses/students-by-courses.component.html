@@ -1,0 +1,56 @@
+<section class="content" fxLayout fxLayoutAlign="center">
+
+    <form (ngSubmit)="save(f)" #f="ngForm">
+
+        <mat-card fxFlex.xs="100%" fxFlex="400px">
+            <mat-card-title fxLayoutAlign="center">Select Courses!</mat-card-title>
+            <mat-card-content fxLayoutAlign="center">
+                <mat-form-field>
+                    <mat-select placeholder="Choose Student" ngModel name="student" required>
+                        <mat-option *ngFor="let student of studentsList" [value]="student">
+                            {{ student.firstName + ' ' + student.lastName}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-select placeholder="Choose Course" ngModel name="course" required>
+                        <mat-option *ngFor="let course of coursesList" [value]="course">
+                            {{ course.name }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center" >
+                <button *ngIf="studentsList" type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Save</button>
+            </mat-card-actions>
+        </mat-card>
+
+    </form>
+    
+</section>
+
+
+<section *ngIf="!(dataList.length==0)" fxLayoutAlign="center" 
+        class=" mat-elevation-z8 list-table">
+    <mat-card fxFlex="400px" > 
+        <mat-card-title fxLayoutAlign="center">Students by Courses:</mat-card-title>
+        <mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="studentName">
+                <mat-header-cell *matHeaderCellDef>Student Name</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.studentName }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="courseName">
+                <mat-header-cell *matHeaderCellDef>Course Name</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.courseName }}</mat-cell>
+            </ng-container>
+            
+    
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    
+            <mat-row *matRowDef="let row; columns: displayedColumns;" ></mat-row>
+        </mat-table>
+    </mat-card>
+    
+</section>

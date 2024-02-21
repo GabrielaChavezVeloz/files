@@ -1,0 +1,9 @@
+2023-04-11 19:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AREAS" not found (this database is empty); SQL statement:
+insert into areas (area) values ("Development") [42104-214]
+2023-04-11 19:24:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AREAS" not found (this database is empty); SQL statement:
+insert into areas (area) values ("Development") [42104-214]
+2023-04-11 19:25:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AREAS" not found (this database is empty); SQL statement:
+insert into areas (area) values ("Development") [42104-214]

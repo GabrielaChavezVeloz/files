@@ -1,0 +1,161 @@
+2023-01-31 11:04:26,951 INFO  [org.apache.activemq.artemis.integration.bootstrap] AMQ101000: Starting ActiveMQ Artemis Server
+2023-01-31 11:04:27,956 INFO  [org.apache.activemq.artemis.core.server] AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/large-messages,pagingDirectory=data/paging)
+2023-01-31 11:04:27,997 INFO  [org.apache.activemq.artemis.core.server] AMQ221013: Using NIO Journal
+2023-01-31 11:04:28,060 INFO  [org.apache.activemq.artemis.core.server] AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 536,870,912
+2023-01-31 11:04:28,108 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2023-01-31 11:04:28,110 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2023-01-31 11:04:28,113 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2023-01-31 11:04:28,114 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-mqtt-protocol]. Adding protocol support for: MQTT
+2023-01-31 11:04:28,115 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-openwire-protocol]. Adding protocol support for: OPENWIRE
+2023-01-31 11:04:28,115 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2023-01-31 11:04:28,177 INFO  [org.apache.activemq.artemis.core.server] AMQ221034: Waiting indefinitely to obtain live lock
+2023-01-31 11:04:28,177 INFO  [org.apache.activemq.artemis.core.server] AMQ221035: Live Server Obtained live lock
+2023-01-31 11:04:28,434 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying queue DLQ on address DLQ
+2023-01-31 11:04:28,507 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying queue ExpiryQueue on address ExpiryQueue
+2023-01-31 11:04:29,991 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:61616 for protocols [CORE,MQTT,AMQP,STOMP,HORNETQ,OPENWIRE]
+2023-01-31 11:04:30,262 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:5445 for protocols [HORNETQ,STOMP]
+2023-01-31 11:04:30,567 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:5672 for protocols [AMQP]
+2023-01-31 11:04:30,929 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:1883 for protocols [MQTT]
+2023-01-31 11:04:31,363 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:61613 for protocols [STOMP]
+2023-01-31 11:04:31,365 INFO  [org.apache.activemq.artemis.core.server] AMQ221007: Server is now live
+2023-01-31 11:04:31,366 INFO  [org.apache.activemq.artemis.core.server] AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.2 [0.0.0.0, nodeID=52298f11-a189-11ed-a210-b48c9db43341] 
+2023-01-31 11:04:31,999 INFO  [org.apache.activemq.hawtio.branding.PluginContextListener] Initialized activemq-branding plugin
+2023-01-31 11:04:32,308 INFO  [org.apache.activemq.hawtio.plugin.PluginContextListener] Initialized artemis-plugin plugin
+2023-01-31 11:04:35,503 INFO  [io.hawt.HawtioContextListener] Initialising hawtio services
+2023-01-31 11:04:35,554 INFO  [io.hawt.system.ConfigManager] Configuration will be discovered via system properties
+2023-01-31 11:04:35,562 INFO  [io.hawt.jmx.JmxTreeWatcher] Welcome to hawtio 1.5.5 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-)
+2023-01-31 11:04:35,571 INFO  [io.hawt.jmx.UploadManager] Using file upload directory: C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\uploads
+2023-01-31 11:04:35,635 INFO  [io.hawt.web.AuthenticationFilter] Starting hawtio authentication filter, JAAS realm: "activemq" authorized role(s): "amq" role principal classes: "org.apache.activemq.artemis.spi.core.security.jaas.RolePrincipal"
+2023-01-31 11:04:35,760 INFO  [io.hawt.web.JolokiaConfiguredAgentServlet] Jolokia overridden property: [key=policyLocation, value=file:/C:/Users/gchavezveloz/Documents/course-projects/Messaging/jmsprojects/mybroker/etc/\jolokia-access.xml]
+2023-01-31 11:04:36,162 INFO  [io.hawt.web.RBACMBeanInvoker] Using MBean [hawtio:type=security,area=jmx,rank=0,name=HawtioDummyJMXSecurity] for role based access control
+2023-01-31 11:04:46,489 INFO  [io.hawt.system.ProxyWhitelist] Initial proxy whitelist: [localhost, 127.0.0.1, 10.29.56.235, USQROGCHAVEZVE1.us.deloitte.com, 192.168.100.102]
+2023-01-31 11:04:47,840 INFO  [org.apache.activemq.artemis] AMQ241001: HTTP Server started at http://localhost:8161
+2023-01-31 11:04:47,840 INFO  [org.apache.activemq.artemis] AMQ241002: Artemis Jolokia REST API available at http://localhost:8161/console/jolokia
+2023-01-31 11:04:47,843 INFO  [org.apache.activemq.artemis] AMQ241004: Artemis Console available at http://localhost:8161/console
+2023-01-31 14:32:55,479 INFO  [org.apache.activemq.artemis.integration.bootstrap] AMQ101000: Starting ActiveMQ Artemis Server
+2023-01-31 14:32:55,564 INFO  [org.apache.activemq.artemis.core.server] AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/large-messages,pagingDirectory=data/paging)
+2023-01-31 14:32:55,609 INFO  [org.apache.activemq.artemis.core.server] AMQ221013: Using NIO Journal
+2023-01-31 14:32:55,680 INFO  [org.apache.activemq.artemis.core.server] AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 536,870,912
+2023-01-31 14:32:55,734 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2023-01-31 14:32:55,750 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2023-01-31 14:32:55,750 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2023-01-31 14:32:55,751 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-mqtt-protocol]. Adding protocol support for: MQTT
+2023-01-31 14:32:55,752 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-openwire-protocol]. Adding protocol support for: OPENWIRE
+2023-01-31 14:32:55,753 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2023-01-31 14:32:55,815 INFO  [org.apache.activemq.artemis.core.server] AMQ221034: Waiting indefinitely to obtain live lock
+2023-01-31 14:32:55,815 INFO  [org.apache.activemq.artemis.core.server] AMQ221035: Live Server Obtained live lock
+2023-01-31 14:32:56,786 INFO  [org.apache.activemq.artemis.core.server] AMQ221019: Deleting unreferenced message id=90 from the journal
+2023-01-31 14:32:56,789 INFO  [org.apache.activemq.artemis.core.server] AMQ221019: Deleting unreferenced message id=91 from the journal
+2023-01-31 14:32:56,791 INFO  [org.apache.activemq.artemis.core.server] AMQ221019: Deleting unreferenced message id=92 from the journal
+2023-01-31 14:32:56,820 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying queue DLQ on address DLQ
+2023-01-31 14:32:56,821 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying queue ExpiryQueue on address ExpiryQueue
+2023-01-31 14:32:57,998 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:61616 for protocols [CORE,MQTT,AMQP,STOMP,HORNETQ,OPENWIRE]
+2023-01-31 14:32:58,155 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:5445 for protocols [HORNETQ,STOMP]
+2023-01-31 14:32:58,341 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:5672 for protocols [AMQP]
+2023-01-31 14:32:58,542 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:1883 for protocols [MQTT]
+2023-01-31 14:32:58,774 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:61613 for protocols [STOMP]
+2023-01-31 14:32:58,778 INFO  [org.apache.activemq.artemis.core.server] AMQ221007: Server is now live
+2023-01-31 14:32:58,778 INFO  [org.apache.activemq.artemis.core.server] AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.2 [0.0.0.0, nodeID=52298f11-a189-11ed-a210-b48c9db43341] 
+2023-01-31 14:32:59,360 INFO  [org.apache.activemq.hawtio.branding.PluginContextListener] Initialized activemq-branding plugin
+2023-01-31 14:32:59,644 INFO  [org.apache.activemq.hawtio.plugin.PluginContextListener] Initialized artemis-plugin plugin
+2023-01-31 14:33:02,762 INFO  [io.hawt.HawtioContextListener] Initialising hawtio services
+2023-01-31 14:33:02,833 INFO  [io.hawt.system.ConfigManager] Configuration will be discovered via system properties
+2023-01-31 14:33:02,844 INFO  [io.hawt.jmx.JmxTreeWatcher] Welcome to hawtio 1.5.5 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-)
+2023-01-31 14:33:02,856 INFO  [io.hawt.jmx.UploadManager] Using file upload directory: C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\uploads
+2023-01-31 14:33:02,943 INFO  [io.hawt.web.AuthenticationFilter] Starting hawtio authentication filter, JAAS realm: "activemq" authorized role(s): "amq" role principal classes: "org.apache.activemq.artemis.spi.core.security.jaas.RolePrincipal"
+2023-01-31 14:33:03,118 INFO  [io.hawt.web.JolokiaConfiguredAgentServlet] Jolokia overridden property: [key=policyLocation, value=file:/C:/Users/gchavezveloz/Documents/course-projects/Messaging/jmsprojects/mybroker/etc/\jolokia-access.xml]
+2023-01-31 14:33:03,588 INFO  [io.hawt.web.RBACMBeanInvoker] Using MBean [hawtio:type=security,area=jmx,rank=0,name=HawtioDummyJMXSecurity] for role based access control
+2023-01-31 14:33:13,810 INFO  [io.hawt.system.ProxyWhitelist] Initial proxy whitelist: [localhost, 127.0.0.1, 10.29.160.17, USQROGCHAVEZVE1.us.deloitte.com, 192.168.100.102]
+2023-01-31 14:33:14,704 INFO  [org.apache.activemq.artemis] AMQ241001: HTTP Server started at http://localhost:8161
+2023-01-31 14:33:14,704 INFO  [org.apache.activemq.artemis] AMQ241002: Artemis Jolokia REST API available at http://localhost:8161/console/jolokia
+2023-01-31 14:33:14,706 INFO  [org.apache.activemq.artemis] AMQ241004: Artemis Console available at http://localhost:8161/console
+2023-01-31 15:10:38,318 INFO  [io.hawt.web.AuthenticationFilter] Destroying hawtio authentication filter
+2023-01-31 15:10:38,321 INFO  [io.hawt.HawtioContextListener] Destroying hawtio services
+2023-01-31 15:10:39,504 INFO  [org.apache.activemq.hawtio.plugin.PluginContextListener] Destroyed artemis-plugin plugin
+2023-01-31 15:10:39,569 INFO  [org.apache.activemq.hawtio.branding.PluginContextListener] Destroyed activemq-branding plugin
+2023-01-31 15:10:47,432 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-activemq-branding.war-_activemq-branding-any-9097954779100137705.dir\webapp\WEB-INF\lib\hawtio-plugin-mbean-1.5.5.jar
+2023-01-31 15:10:47,433 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-activemq-branding.war-_activemq-branding-any-9097954779100137705.dir\webapp\WEB-INF\lib\log4j-1.2.16.jar
+2023-01-31 15:10:47,437 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-activemq-branding.war-_activemq-branding-any-9097954779100137705.dir\webapp\WEB-INF\lib
+2023-01-31 15:10:47,439 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-activemq-branding.war-_activemq-branding-any-9097954779100137705.dir\webapp\WEB-INF
+2023-01-31 15:10:47,441 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-activemq-branding.war-_activemq-branding-any-9097954779100137705.dir\webapp
+2023-01-31 15:10:47,441 WARN  [org.apache.activemq.artemis] AMQ244003: Temporary file not deleted on shutdown: C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-activemq-branding.war-_activemq-branding-any-9097954779100137705.dir
+2023-01-31 15:10:55,247 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-artemis-plugin.war-_artemis-plugin-any-2929115498772040440.dir\webapp\WEB-INF\lib\hawtio-plugin-mbean-1.5.5.jar
+2023-01-31 15:10:55,248 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-artemis-plugin.war-_artemis-plugin-any-2929115498772040440.dir\webapp\WEB-INF\lib
+2023-01-31 15:10:55,251 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-artemis-plugin.war-_artemis-plugin-any-2929115498772040440.dir\webapp\WEB-INF
+2023-01-31 15:10:55,252 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-artemis-plugin.war-_artemis-plugin-any-2929115498772040440.dir\webapp
+2023-01-31 15:10:55,255 WARN  [org.apache.activemq.artemis] AMQ244003: Temporary file not deleted on shutdown: C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-artemis-plugin.war-_artemis-plugin-any-2929115498772040440.dir
+2023-01-31 15:11:03,087 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\commons-codec-1.10.jar
+2023-01-31 15:11:03,088 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\commons-fileupload-1.3.2.jar
+2023-01-31 15:11:03,094 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\commons-io-2.2.jar
+2023-01-31 15:11:03,096 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\commons-logging-1.0.3.jar
+2023-01-31 15:11:03,097 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\guava-21.0.jar
+2023-01-31 15:11:03,098 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\hawtio-core-1.5.5.jar
+2023-01-31 15:11:03,100 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\hawtio-git-1.5.5.jar
+2023-01-31 15:11:03,101 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\hawtio-system-1.5.5.jar
+2023-01-31 15:11:03,104 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\hawtio-util-1.5.5.jar
+2023-01-31 15:11:03,106 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\httpcore-4.4.4.jar
+2023-01-31 15:11:03,107 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\jolokia-core-1.3.7.jar
+2023-01-31 15:11:03,108 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\json-simple-1.1.1.jar
+2023-01-31 15:11:03,109 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\org.osgi.core-4.3.0.jar
+2023-01-31 15:11:03,110 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib\org.osgi.enterprise-4.2.0.jar
+2023-01-31 15:11:03,111 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF\lib
+2023-01-31 15:11:03,112 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp\WEB-INF
+2023-01-31 15:11:03,112 WARN  [org.apache.activemq.artemis.logs] AMQ202015: Failed to clean up file C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir\webapp
+2023-01-31 15:11:03,113 WARN  [org.apache.activemq.artemis] AMQ244003: Temporary file not deleted on shutdown: C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\jetty-localhost-8161-console.war-_console-any-7683650195358868694.dir
+2023-01-31 15:11:03,114 INFO  [org.apache.activemq.artemis.core.server] AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.6.2 [52298f11-a189-11ed-a210-b48c9db43341] stopped, uptime 38 minutes
+2023-01-31 15:11:10,148 INFO  [org.apache.activemq.artemis.integration.bootstrap] AMQ101000: Starting ActiveMQ Artemis Server
+2023-01-31 15:11:10,220 INFO  [org.apache.activemq.artemis.core.server] AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/large-messages,pagingDirectory=data/paging)
+2023-01-31 15:11:10,256 INFO  [org.apache.activemq.artemis.core.server] AMQ221013: Using NIO Journal
+2023-01-31 15:11:10,306 INFO  [org.apache.activemq.artemis.core.server] AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 536,870,912
+2023-01-31 15:11:10,352 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2023-01-31 15:11:10,369 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2023-01-31 15:11:10,370 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2023-01-31 15:11:10,370 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-mqtt-protocol]. Adding protocol support for: MQTT
+2023-01-31 15:11:10,371 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-openwire-protocol]. Adding protocol support for: OPENWIRE
+2023-01-31 15:11:10,372 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2023-01-31 15:11:10,432 INFO  [org.apache.activemq.artemis.core.server] AMQ221034: Waiting indefinitely to obtain live lock
+2023-01-31 15:11:10,432 INFO  [org.apache.activemq.artemis.core.server] AMQ221035: Live Server Obtained live lock
+2023-01-31 15:11:11,387 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying queue DLQ on address DLQ
+2023-01-31 15:11:11,388 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying queue ExpiryQueue on address ExpiryQueue
+2023-01-31 15:11:12,522 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:61616 for protocols [CORE,MQTT,AMQP,STOMP,HORNETQ,OPENWIRE]
+2023-01-31 15:11:12,697 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:5445 for protocols [HORNETQ,STOMP]
+2023-01-31 15:11:12,892 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:5672 for protocols [AMQP]
+2023-01-31 15:11:13,118 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:1883 for protocols [MQTT]
+2023-01-31 15:11:13,379 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started NIO Acceptor at 0.0.0.0:61613 for protocols [STOMP]
+2023-01-31 15:11:13,381 INFO  [org.apache.activemq.artemis.core.server] AMQ221007: Server is now live
+2023-01-31 15:11:13,382 INFO  [org.apache.activemq.artemis.core.server] AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.2 [0.0.0.0, nodeID=52298f11-a189-11ed-a210-b48c9db43341] 
+2023-01-31 15:11:13,925 INFO  [org.apache.activemq.hawtio.branding.PluginContextListener] Initialized activemq-branding plugin
+2023-01-31 15:11:14,209 INFO  [org.apache.activemq.hawtio.plugin.PluginContextListener] Initialized artemis-plugin plugin
+2023-01-31 15:11:17,095 INFO  [io.hawt.HawtioContextListener] Initialising hawtio services
+2023-01-31 15:11:17,139 INFO  [io.hawt.system.ConfigManager] Configuration will be discovered via system properties
+2023-01-31 15:11:17,146 INFO  [io.hawt.jmx.JmxTreeWatcher] Welcome to hawtio 1.5.5 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-)
+2023-01-31 15:11:17,156 INFO  [io.hawt.jmx.UploadManager] Using file upload directory: C:\Users\gchavezveloz\Documents\course-projects\Messaging\jmsprojects\mybroker\tmp\uploads
+2023-01-31 15:11:17,223 INFO  [io.hawt.web.AuthenticationFilter] Starting hawtio authentication filter, JAAS realm: "activemq" authorized role(s): "amq" role principal classes: "org.apache.activemq.artemis.spi.core.security.jaas.RolePrincipal"
+2023-01-31 15:11:17,357 INFO  [io.hawt.web.JolokiaConfiguredAgentServlet] Jolokia overridden property: [key=policyLocation, value=file:/C:/Users/gchavezveloz/Documents/course-projects/Messaging/jmsprojects/mybroker/etc/\jolokia-access.xml]
+2023-01-31 15:11:17,700 INFO  [io.hawt.web.RBACMBeanInvoker] Using MBean [hawtio:type=security,area=jmx,rank=0,name=HawtioDummyJMXSecurity] for role based access control
+2023-01-31 15:11:27,849 INFO  [io.hawt.system.ProxyWhitelist] Initial proxy whitelist: [localhost, 127.0.0.1, 10.29.160.17, USQROGCHAVEZVE1.us.deloitte.com, 192.168.100.102]
+2023-01-31 15:11:28,778 INFO  [org.apache.activemq.artemis] AMQ241001: HTTP Server started at http://localhost:8161
+2023-01-31 15:11:28,786 INFO  [org.apache.activemq.artemis] AMQ241002: Artemis Jolokia REST API available at http://localhost:8161/console/jolokia
+2023-01-31 15:11:28,788 INFO  [org.apache.activemq.artemis] AMQ241004: Artemis Console available at http://localhost:8161/console
+2023-01-31 16:29:27,651 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure has been detected: An existing connection was forcibly closed by the remote host [code=GENERIC_EXCEPTION]
+2023-01-31 16:29:27,653 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 0b717d0f-a1b6-11ed-9965-b48c9db43341
+2023-01-31 16:29:27,656 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 0b717d0f-a1b6-11ed-9965-b48c9db43341
+2023-01-31 16:29:27,657 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 0b74ff80-a1b6-11ed-9965-b48c9db43341
+2023-01-31 16:29:27,662 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 0b74ff80-a1b6-11ed-9965-b48c9db43341
+2023-01-31 17:51:04,690 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure has been detected: An existing connection was forcibly closed by the remote host [code=GENERIC_EXCEPTION]
+2023-01-31 17:51:04,692 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 1cbaba2f-a1c2-11ed-9fe2-b48c9db43341
+2023-01-31 17:51:04,694 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 1cbaba2f-a1c2-11ed-9fe2-b48c9db43341
+2023-01-31 17:51:04,695 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 1cbc40d0-a1c2-11ed-9fe2-b48c9db43341
+2023-01-31 17:51:04,696 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 1cbc40d0-a1c2-11ed-9fe2-b48c9db43341
+2023-01-31 17:51:14,258 WARN  [org.apache.activemq.artemis.core.server] AMQ222149: Message Reference[2147484175]:RELIABLE:CoreMessage[messageID=2147484175,durable=true,userID=1cc28261-a1c2-11ed-9fe2-b48c9db43341,priority=4, timestamp=Tue Jan 31 17:50:59 CST 2023,expiration=0, durable=true, address=requestQueue,size=496,properties=TypedProperties[__AMQ_CID=1cbaba2e-a1c2-11ed-9fe2-b48c9db43341,_AMQ_ROUTING_TYPE=1]]@22068578 has reached maximum delivery attempts, sending it to Dead Letter Address DLQ from requestQueue
+2023-01-31 17:51:23,817 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure has been detected: An existing connection was forcibly closed by the remote host [code=GENERIC_EXCEPTION]
+2023-01-31 17:51:23,818 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 254aa68b-a1c2-11ed-89d7-b48c9db43341
+2023-01-31 17:51:23,820 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 254aa68b-a1c2-11ed-89d7-b48c9db43341
+2023-01-31 17:51:23,820 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 254cc96c-a1c2-11ed-89d7-b48c9db43341
+2023-01-31 17:51:23,825 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 254cc96c-a1c2-11ed-89d7-b48c9db43341
+2023-01-31 17:53:16,799 WARN  [org.apache.activemq.artemis.core.server] AMQ222149: Message Reference[2147484272]:RELIABLE:CoreMessage[messageID=2147484272,durable=true,userID=6e5cdc51-a1c2-11ed-b2cc-b48c9db43341,priority=4, timestamp=Tue Jan 31 17:53:16 CST 2023,expiration=0, durable=true, address=passengerRequestQueue,size=514,properties=TypedProperties[__AMQ_CID=6e55fe7e-a1c2-11ed-b2cc-b48c9db43341,_AMQ_ROUTING_TYPE=1]]@32835893 has reached maximum delivery attempts, sending it to Dead Letter Address DLQ from passengerRequestQueue
+2023-01-31 17:55:10,398 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure has been detected: An existing connection was forcibly closed by the remote host [code=GENERIC_EXCEPTION]
+2023-01-31 17:55:10,398 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 6b47ac8d-a1c2-11ed-9323-b48c9db43341
+2023-01-31 17:55:10,400 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 6b47ac8d-a1c2-11ed-9323-b48c9db43341
+2023-01-31 17:55:10,401 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 6b49814e-a1c2-11ed-9323-b48c9db43341
+2023-01-31 17:55:10,405 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 6b49814e-a1c2-11ed-9323-b48c9db43341

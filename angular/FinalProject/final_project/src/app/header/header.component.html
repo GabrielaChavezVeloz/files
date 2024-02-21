@@ -1,0 +1,51 @@
+<mat-sidenav-container fullscreen>
+  <mat-toolbar color="primary">
+      <div class="toolbar-tools">
+          <a class="menu-item" mat-button routerLink="/books"
+          routerLinkActive="menu-item-active" *ngIf="isAuth">
+              <span>BOOKS</span>
+          </a>
+
+          <a class="menu-item" mat-button routerLink="/authors"
+          routerLinkActive="menu-item-active" *ngIf="isAuth">
+              <span>AUTHORS</span>
+          </a>
+
+          <a class="menu-item" mat-button routerLink="/genres"
+          routerLinkActive="menu-item-active" *ngIf="isAuth">
+              <span>GENRES</span>
+          </a>
+      </div>
+      <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+          <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+            <li *ngIf="!isAuth">
+              <a routerLink="/signup">
+                <mat-icon>face</mat-icon>
+                <span class="nav-caption">Signup</span>
+              </a>
+            </li>
+            <li *ngIf="!isAuth">
+              <a routerLink="/login">
+                <mat-icon>input</mat-icon>
+                <span class="nav-caption">Login</span>
+              </a>
+            </li>
+            <li *ngIf="isAuth">
+              <a style="cursor: pointer;">
+                <mat-icon>face</mat-icon>
+                <span class="nav-caption">User</span>
+              </a>
+            </li>
+            <li *ngIf="isAuth">
+              <a style="cursor: pointer;" (click)="onLogout()">
+                <mat-icon>eject</mat-icon>
+                <span class="nav-caption">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      <div class="filler"></div>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

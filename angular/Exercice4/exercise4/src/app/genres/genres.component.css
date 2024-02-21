@@ -1,0 +1,33 @@
+.genre-content{
+    padding: 30px;
+    align-items: center;
+}
+
+mat-form-field{
+    padding: 5px;
+    padding-left: 80px;
+}
+
+mat-card-title {
+    padding: 10PX;
+}
+
+.genre-table {
+    width: 100%;
+}
+  
+.mat-column-id {
+    width: 20px;
+    border-right: 1px solid currentColor;
+    padding-right: 12px;
+    text-align: center;
+}
+
+.mat-column-name {
+    padding-left: 16px;
+    font-size: 15px;
+}
+    
+
+  
+ 

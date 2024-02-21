@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MoneyTest" project="tdd-by-example-master" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="guru.springframework.MoneyTest" time="0.009" displayname="MoneyTest" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]">
+    <testcase name="testMultiplication" classname="guru.springframework.MoneyTest" time="0.006" displayname="testMultiplication()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testMultiplication()]"/>
+    <testcase name="testCurrency" classname="guru.springframework.MoneyTest" time="0.0" displayname="testCurrency()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testCurrency()]"/>
+    <testcase name="testEqualityDollar" classname="guru.springframework.MoneyTest" time="0.001" displayname="testEqualityDollar()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testEqualityDollar()]"/>
+  </testsuite>
+</testrun>

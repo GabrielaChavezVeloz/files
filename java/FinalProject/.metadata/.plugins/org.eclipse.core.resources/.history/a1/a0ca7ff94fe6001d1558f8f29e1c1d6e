@@ -1,0 +1,28 @@
+package com.ecommerce.udemy.services;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.ecommerce.udemy.dto.CartDto;
+import com.ecommerce.udemy.dto.CartListDto;
+import com.ecommerce.udemy.model.OrderMessage;
+import com.ecommerce.udemy.repositories.OrderRepository;
+
+public class OrderServiceTest {
+
+	@Mock
+    OrderRepository orderRepository;
+
+    @InjectMocks
+    OrderService service;
+	
+	@Test
+	void createOrderTest() {
+		List<CartDto> cartList = new ArrayList<CartDto>();
+		CartListDto cartList = new CartListDto();
+		OrderMessage orderMessage = new OrderMessage();
+	}
+}

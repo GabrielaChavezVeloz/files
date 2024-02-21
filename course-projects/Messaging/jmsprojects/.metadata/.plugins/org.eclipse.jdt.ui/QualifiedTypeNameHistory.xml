@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="javax.jms.TemporaryQueue"/>
+    <fullyQualifiedTypeName name="javax.jms.JMSConsumer"/>
+    <fullyQualifiedTypeName name="javax.jms.ObjectMessage"/>
+    <fullyQualifiedTypeName name="javax.jms.Message"/>
+    <fullyQualifiedTypeName name="org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory"/>
+    <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+    <fullyQualifiedTypeName name="javax.jms.JMSContext"/>
+    <fullyQualifiedTypeName name="javax.jms.MapMessage"/>
+    <fullyQualifiedTypeName name="com.gchavezveloz.jms.model.Passenger"/>
+    <fullyQualifiedTypeName name="javax.jms.JMSProducer"/>
+    <fullyQualifiedTypeName name="javax.jms.JMSException"/>
+    <fullyQualifiedTypeName name="javax.naming.NamingException"/>
+    <fullyQualifiedTypeName name="javax.jms.MessageListener"/>
+    <fullyQualifiedTypeName name="com.gchavezveloz.reservation.listener.ReservationSystemListener"/>
+    <fullyQualifiedTypeName name="com.gchavezveloz.jms.card.Card"/>
+    <fullyQualifiedTypeName name="com.gchavezveloz.jms.checkin.FlightCheckin"/>
+    <fullyQualifiedTypeName name="javax.jms.Queue"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+</qualifiedTypeNameHistroy>

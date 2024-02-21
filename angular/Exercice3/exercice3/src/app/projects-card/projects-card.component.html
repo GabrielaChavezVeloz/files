@@ -1,0 +1,76 @@
+<section class="project-content" fxLayout fxLayoutAlign="center">
+    <form (ngSubmit)="addProject()" #f="ngForm">
+        
+        <mat-card fxFlex="400px" > 
+            <mat-card-title fxLayoutAlign="center">Add new project!</mat-card-title>
+            <mat-card-content >
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Name" 
+                            [(ngModel)]="newProject.name" name="name" #name="ngModel"
+                            required>
+                    <mat-error *ngIf="name.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Location</mat-label>
+                    <input matInput placeholder="Location" 
+                            [(ngModel)]="newProject.location" name="location" #location="ngModel"
+                            required>
+                            <mat-error *ngIf="location.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Leader</mat-label>
+                    <input matInput placeholder="Leader" 
+                            [(ngModel)]="newProject.leader" name="duration" #leader="ngModel"
+                            required>
+                    <mat-error *ngIf="leader.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+                <button mat-raised-button color="primary" [disabled]="f.invalid">Save Project</button>
+                <button mat-raised-button type="button" (click)="clean()">Clean</button>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</section>
+
+
+<section *ngIf="!(projectsList.length==0)" fxLayoutAlign="center" 
+        class=" mat-elevation-z8 project-table">
+    <mat-card fxFlex="400px" > 
+        <mat-card-title fxLayoutAlign="center">Projects list:</mat-card-title>
+        <mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.id }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="name">
+                <mat-header-cell *matHeaderCellDef>Project Name</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="location">
+                <mat-header-cell *matHeaderCellDef>Location</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.location }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="leader">
+                <mat-header-cell *matHeaderCellDef>Leader Name</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.leader }}</mat-cell>
+            </ng-container>
+    
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    
+            <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="showProject(row)"></mat-row>
+        </mat-table>
+    </mat-card>
+    
+</section>
+
+
+
+
+
+
+
+
+
+

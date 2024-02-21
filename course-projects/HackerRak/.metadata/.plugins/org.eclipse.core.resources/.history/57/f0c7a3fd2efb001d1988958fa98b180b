@@ -1,0 +1,95 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'timeInWords' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts following parameters:
+     *  1. INTEGER h
+     *  2. INTEGER m
+     */
+
+    public static String timeInWords(int h, int m) {
+    // Write your code here
+    	
+    	int nextH = h+1;
+    	int restM = 0;
+    	String time="";
+    	String [] hourList = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve" };
+    	String [] minuteList = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",  "ten", 
+    							"eleven", "twelve", "thirteen", "fourteen", "quarter", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", 
+    							"twenty one", "twenty two", "twenty three", "twenty four", "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine", "half"
+    	};
+    	
+    	String minutes = "minutes";
+    	String minute = "minute";
+    	String to = "to";
+    	String past = "past";
+    	String oclock = "o' clock";
+    	String space = " ";
+    	
+    	    	 
+    	
+    	switch(m){
+    		case 0:
+    			time = hourList[h-1] + space + oclock;
+    			break;
+    		case 1:
+    			time = minuteList[m-1] + space + minute + space + past + hourList[h-1];
+    			break;
+    		case 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, , 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29:
+    			time = minuteList[m-1] + space + minutes + space + past + hourList[h-1];
+    			break;
+    		case 15, 30: 
+    			time = minuteList[m-1] + space + past + hourList[h-1];
+    			break;
+    		case 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59:
+    			restM = 60 - m;
+    			time = minuteList[restM-1] + space + minutes + space + to + hourList[h];
+    			break;
+    		case 45:
+    			restM = 60 - m;
+    			time = minuteList[restM-1] + space + to + hourList[h];
+    			break;
+    		default:
+    			break;
+    			
+    	}
+
+    	return time;
+    }
+
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int h = 5;
+
+        int m = 47;
+
+        String result = Result.timeInWords(h, m);
+        
+        System.out.println(result);
+
+        bufferedWriter.write(result);
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}

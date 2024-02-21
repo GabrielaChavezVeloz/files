@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MoneyTest" project="tdd-by-example-master" tests="10" started="10" failures="0" errors="0" ignored="0">
+  <testsuite name="guru.springframework.MoneyTest" time="0.011" displayname="MoneyTest" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]">
+    <testcase name="testReduceSum" classname="guru.springframework.MoneyTest" time="0.004" displayname="testReduceSum()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testReduceSum()]"/>
+    <testcase name="testSimpleAddition" classname="guru.springframework.MoneyTest" time="0.0" displayname="testSimpleAddition()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testSimpleAddition()]"/>
+    <testcase name="testMultiplication" classname="guru.springframework.MoneyTest" time="0.0" displayname="testMultiplication()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testMultiplication()]"/>
+    <testcase name="testMixedAddition" classname="guru.springframework.MoneyTest" time="0.001" displayname="testMixedAddition()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testMixedAddition()]"/>
+    <testcase name="testReduceMoney" classname="guru.springframework.MoneyTest" time="0.0" displayname="testReduceMoney()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testReduceMoney()]"/>
+    <testcase name="testPlusReturnSum" classname="guru.springframework.MoneyTest" time="0.0" displayname="testPlusReturnSum()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testPlusReturnSum()]"/>
+    <testcase name="testIdentityRate" classname="guru.springframework.MoneyTest" time="0.0" displayname="testIdentityRate()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testIdentityRate()]"/>
+    <testcase name="testCurrency" classname="guru.springframework.MoneyTest" time="0.0" displayname="testCurrency()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testCurrency()]"/>
+    <testcase name="testReduceMoneyDifferentCurrency" classname="guru.springframework.MoneyTest" time="0.0" displayname="testReduceMoneyDifferentCurrency()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testReduceMoneyDifferentCurrency()]"/>
+    <testcase name="testEqualityDollar" classname="guru.springframework.MoneyTest" time="0.001" displayname="testEqualityDollar()" uniqueid="[engine:junit-jupiter]/[class:guru.springframework.MoneyTest]/[method:testEqualityDollar()]"/>
+  </testsuite>
+</testrun>

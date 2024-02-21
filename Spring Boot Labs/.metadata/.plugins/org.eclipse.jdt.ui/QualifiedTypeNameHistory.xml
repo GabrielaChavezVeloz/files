@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="online.store.model.Order"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="javax.jms.Message"/>
+    <fullyQualifiedTypeName name="javax.jms.Session"/>
+    <fullyQualifiedTypeName name="javax.jms.ObjectMessage"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="online.store.model.Messages"/>
+    <fullyQualifiedTypeName name="online.store.model.Message"/>
+</qualifiedTypeNameHistroy>

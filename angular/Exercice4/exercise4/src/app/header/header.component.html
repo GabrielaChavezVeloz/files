@@ -1,0 +1,36 @@
+<mat-sidenav-container fullscreen>
+    <mat-toolbar color="primary">
+        <div class="toolbar-tools">
+            <a class="menu-item" mat-button routerLink="/books"
+            routerLinkActive="menu-item-active" *ngIf="isAuth">
+                <span>BOOKS</span>
+            </a>
+  
+            <a class="menu-item" mat-button routerLink="/authors"
+            routerLinkActive="menu-item-active" *ngIf="isAuth">
+                <span>AUTHORS</span>
+            </a>
+
+            <a class="menu-item" mat-button routerLink="/genres"
+            routerLinkActive="menu-item-active" *ngIf="isAuth">
+                <span>GENRES</span>
+            </a>
+        </div>
+        <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+            <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+              <li *ngIf="!isAuth">
+                <a routerLink="/signup">Signup</a>
+              </li>
+              <li *ngIf="!isAuth">
+                <a routerLink="/login">Login</a>
+              </li>
+              <li *ngIf="isAuth">
+                <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
+              </li>
+            </ul>
+          </div>
+
+        <div class="filler"></div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+</mat-sidenav-container>

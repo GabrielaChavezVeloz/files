@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\Program Files (x86)\Java\jre1.8.0_351" version="1.8.0_351">
+        <bootpath>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\lib\resources.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\lib\rt.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\lib\jsse.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\lib\jce.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\lib\charsets.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\lib\jfr.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files (x86)\Java\jre1.8.0_351\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Users\gchavezveloz\Documents\sts-4.17.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933" version="17.0.5"/>
+    <libraryInfo home="C:\Program Files (x86)\Java\jdk8u362" version="1.8.0_362">
+        <bootpath>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\resources.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\rt.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\sunrsasign.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\jsse.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\jce.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\charsets.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\jfr.jar"/>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files (x86)\Java\jdk8u362\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Users\gchavezveloz\Documents\sts-4.17.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre" version="17.0.5"/>
+</libraryInfos>

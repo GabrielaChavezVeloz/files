@@ -1,0 +1,26 @@
+git reset --soft HEAD~1
+	remueve 1 commit pero lo regresa a stage porque dice soft
+git reset
+	remueve un cambio de stage, lo regresa al local
+git add .
+	mueve todo a stage
+git add /path/file.txt
+	mueve un archivo a stage
+git log
+	muestra todos los commits
+git commit -m "comentario"
+	hace commit con un comentario
+git checkout branch/name	
+	se mueve a un branch
+git checkout -b new/branch
+	crea nuevo branch
+git config --list
+	muestra la lista de las configuraciones
+git config credential.username "user"
+	agrega un nuevo usuario que hara los commits en ese branch
+git push origin master -f
+	un push forzado si accidentalmente se borro un commit o merge
+
+
+
+git clone https://GabyChavezVeloz@bitbucket.org/coursegit06/uifrontend.git

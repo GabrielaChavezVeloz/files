@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: online.store.controllers.CheckoutControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.051 s - in online.store.controllers.CheckoutControllerTest

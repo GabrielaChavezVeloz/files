@@ -1,0 +1,30 @@
+
+
+<a href="#" (click)="showStudentsTab()">Students</a><br>
+<a href="#" (click)="showCoursesTab()">Courses</a><br>
+<a href="#" (click)="showProjectsTab()">Projects</a><br>
+
+
+
+<div *ngIf=showStudents>
+    <h3>Students!</h3>
+    <!--<students-card *ngFor="let student of students" [student]="student"></students-card>-->
+    <students-card></students-card>
+</div>
+
+
+<div *ngIf=showCourses>
+    <h3>Courses!</h3>
+    <!--<courses-card *ngFor="let course of courses" [course]="course"></courses-card>-->
+    <courses-card></courses-card>
+</div>
+
+
+
+<div *ngIf="showProjects">
+    <h3>Projects!</h3>
+    <!--<projects-card *ngFor="let project of projects" [project]="project"></projects-card>-->
+    <projects-card></projects-card>
+</div>
+
+

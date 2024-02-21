@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\gchavezveloz\Documents\course-projects\HackerRak\.metadata\.plugins\org.eclipse.jdt.core
+3271193799.index
+1865797976.index
+726144992.index

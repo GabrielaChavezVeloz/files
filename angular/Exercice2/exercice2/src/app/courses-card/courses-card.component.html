@@ -1,0 +1,79 @@
+<section class="course-content" fxLayout fxLayoutAlign="center">
+    <form (ngSubmit)="addCourse()" #f="ngForm">
+        
+        <mat-card fxFlex="400px" > 
+            <mat-card-title fxLayoutAlign="center">Add new course!</mat-card-title>
+            <mat-card-content >
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Name" 
+                            [(ngModel)]="newCourse.name" name="name" #name="ngModel"
+                            required>
+                    <mat-error *ngIf="name.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Languaje</mat-label>
+                    <input matInput placeholder="Languaje" 
+                            [(ngModel)]="newCourse.languaje" name="languaje" #languaje="ngModel"
+                            required>
+                            <mat-error *ngIf="languaje.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Duration</mat-label>
+                    <input matInput placeholder="Duration" 
+                            [(ngModel)]="newCourse.duration" name="duration" #duration="ngModel"
+                            required>
+                    <mat-error *ngIf="duration.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+                <button mat-raised-button color="primary" [disabled]="f.invalid">Save Course</button>
+                <button mat-raised-button type="button" (click)="clean()">Clean</button>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</section>
+
+<section *ngIf="!(courses.length==0)" fxLayoutAlign="center" 
+        class=" mat-elevation-z8 course-table">
+    <mat-card fxFlex="400px" > 
+        <mat-card-title fxLayoutAlign="center">Courses list:</mat-card-title>
+        <mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.id }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="name">
+                <mat-header-cell *matHeaderCellDef>Course Name</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="languaje">
+                <mat-header-cell *matHeaderCellDef>Languaje</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.languaje }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="duration">
+                <mat-header-cell *matHeaderCellDef>Duration</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.duration }}</mat-cell>
+            </ng-container>
+    
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    
+            <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="showCourse(row)"></mat-row>
+        </mat-table>
+    </mat-card>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

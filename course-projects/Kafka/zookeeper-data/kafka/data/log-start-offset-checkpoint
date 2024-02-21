@@ -1,0 +1,10 @@
+0
+8
+kafka-stream-1675965431334-t-commodity-feedback-six-good-repartition 0 26
+kafka-stream-1675965431334-t-commodity-feedback-six-bad-repartition 0 23
+kafka-stream-1675965020252-t-commodity-feedback-five-bad-repartition 0 14
+kafka-stream-1675965431334-KSTREAM-AGGREGATE-STATE-STORE-0000000028-repartition 0 23
+kafka-stream-1675965431334-KSTREAM-AGGREGATE-STATE-STORE-0000000012-repartition 0 26
+kafka-stream-1675964477963-KSTREAM-AGGREGATE-STATE-STORE-0000000014-repartition 0 10
+kafka-stream-1675964477963-KSTREAM-AGGREGATE-STATE-STORE-0000000005-repartition 0 15
+kafka-stream-1675965020252-t-commodity-feedback-five-good-repartition 0 16

@@ -1,0 +1,70 @@
+<section class="author-content" fxLayout fxLayoutAlign="center">
+    <form (ngSubmit)="addAuthor()" #f="ngForm">
+        
+        <mat-card fxFlex="400px" > 
+            <mat-card-title fxLayoutAlign="center">Add new author!</mat-card-title>
+            <mat-card-content >
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Name" 
+                            [(ngModel)]="newAuthor.name" name="name" #name="ngModel"
+                            required>
+                    <mat-error *ngIf="name.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Nacionality</mat-label>
+                    <input matInput placeholder="Nacionality" 
+                            [(ngModel)]="newAuthor.nacionality" name="nacionality" #nacionality="ngModel"
+                            required>
+                            <mat-error *ngIf="nacionality.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Age</mat-label>
+                    <input matInput placeholder="Age" 
+                            [(ngModel)]="newAuthor.age" name="age" #age="ngModel"
+                            required>
+                    <mat-error *ngIf="age.hasError('required')">Field must not be empty.</mat-error>
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+                <button mat-raised-button color="primary" [disabled]="f.invalid">Save Author</button>
+                <button mat-raised-button type="button" (click)="clean()">Clean</button>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</section>
+
+<section *ngIf="(authors)" fxLayoutAlign="center" 
+        class=" mat-elevation-z8 author-table">
+    <mat-card fxFlex="400px" > 
+        <mat-card-title fxLayoutAlign="center">Authors list:</mat-card-title>
+        <mat-table [dataSource]="dataSource" matSort>
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>ID</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.id }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="name">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="nacionality">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>Nacionality</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.nacionality }}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="age">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>Age</mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.age }}</mat-cell>
+            </ng-container>
+    
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    
+            <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="showAuthor(row)"></mat-row>
+        </mat-table>
+        <mat-paginator [pageSize]="1" [pageSizeOptions]="[1, 5, 10, 20]"></mat-paginator>        
+    </mat-card>
+    
+    
+</section>
+
+
+

@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+}
+
+main {
+    margin: 30px;
+}
+
+.toolbar-tools {
+  display: flex;
+}
+
+
+.filler {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+.menu-item.menu-item-active {
+  text-decoration: underline;
+}
+

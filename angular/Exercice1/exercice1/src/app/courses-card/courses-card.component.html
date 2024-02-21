@@ -1,0 +1,25 @@
+
+<div *ngFor="let course of courses" #container>
+
+    <table>
+        <tr>
+            <td>Course Name: {{course.name}} </td>
+            <td>Languaje: {{course.languaje}} </td>
+            <td>Duration: {{course.duration}} </td>
+        </tr>
+        
+    </table>
+    
+</div>
+
+<div>
+    <h3>Add new course!</h3>
+    <form (ngSubmit)="addCourse()" >
+        
+        Name: <input type="text" [(ngModel)]="newCourse.name" name="name"><br>
+        Languaje: <input type="text" [(ngModel)]="newCourse.languaje" name="languaje"><br>
+        Duration: <input type="text" [(ngModel)]="newCourse.duration" name="duration"><br>
+        <button type="submit" >Add</button>
+
+    </form>
+</div>

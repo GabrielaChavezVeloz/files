@@ -1,0 +1,24 @@
+
+<div *ngFor="let project of projects" #container>
+    <table>
+        <tr>
+            <td>Project Name: {{project.name}} </td>
+            <td>Location: {{project.location}} </td>
+            <td>Project Leader: {{project.leader}} </td>
+        </tr>
+        
+    </table>
+    
+</div>
+
+<div>
+    <h3>Add new project!</h3>
+    <form (ngSubmit)="  addProject()" >
+        
+        Name: <input type="text" [(ngModel)]="newProject.name" name="name"><br>
+        Location: <input type="text" [(ngModel)]="newProject.location" name="location"><br>
+        Leader: <input type="text" [(ngModel)]="newProject.leader" name="leader"><br>
+        <button type="submit" >Add</button>
+
+    </form>
+</div>

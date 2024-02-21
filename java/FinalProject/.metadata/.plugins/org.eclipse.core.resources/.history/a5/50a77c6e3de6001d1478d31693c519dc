@@ -1,0 +1,22 @@
+package com.ecommerce.udemy.kafka;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ecommerce.udemy.mappers.OrderMapper;
+import com.ecommerce.udemy.services.OrderService;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class KafkaConsumerService {
+
+	@Autowired
+	OrderService orderService;
+	
+	@Autowired
+	private OrderMapper orderMapper;
+	
+	
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.actuate.endpoint.web.WebEndpointsSupplier"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.actuate.endpoint.web.EndpointMediaTypes"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.actuate.endpoint.web.annotation.ControllerEndpointsSupplier"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.actuate.endpoint.web.annotation.ServletEndpointsSupplier"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties"/>
+    <fullyQualifiedTypeName name="io.micrometer.core.instrument.Clock"/>
+    <fullyQualifiedTypeName name="io.micrometer.core.lang.Nullable"/>
+</qualifiedTypeNameHistroy>

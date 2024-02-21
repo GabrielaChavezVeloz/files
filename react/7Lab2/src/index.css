@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #38373b;
+}
+
+main {
+  max-width: 70rem;
+  margin: 3rem auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.tickets-list {
+  flex: 3;
+  list-style: none;
+  margin: 0 3rem 0 0;
+  padding: 0;
+}
+
+.tickets-list {
+  color: #c1adfa;
+}
+
+#tickets-filter {
+  flex: 1;
+  background-color: #261131;
+  color: white;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+#tickets-filter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+#tickets-filter section {
+  padding: 1rem 0;
+  border-bottom: 1px solid #c1adfa;
+}
+
+#tickets-filter h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+#tickets-filter input[type='search'],
+#tickets-filter select {
+  display: block;
+  font: inherit;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #472b99;
+  border-radius: 4px;
+}
+
+#tickets-filter__search label,
+#tickets-filter__assignee label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#tickets-filter__status li {
+  margin: 0.25rem;
+  display: flex;
+  align-items: stretch;
+  text-transform: capitalize;
+}
+
+#tickets-filter__status label {
+  margin-left: 0.5rem;
+}
+
+.support-ticket {
+  background-color: #1f1e22;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.support-ticket article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.support-ticket h2,
+.support-ticket p {
+  margin: 0.5rem 0;
+  color: #897fa7;
+}
+
+p.support-ticket__details {
+  color: #615c68;
+  font-weight: bold;
+}
+
+.support-ticket__status {
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  background-color: #351c81;
+  color: #dbd2f8;
+}
+
+.support-ticket__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.support-ticket__actions button {
+  font: inherit;
+  background-color: #472b99;
+  border: 1px solid #472b99;
+  color: #cfc3f3;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.support-ticket__actions button:hover {
+  background-color: #351c81;
+  border-color: #351c81;
+}

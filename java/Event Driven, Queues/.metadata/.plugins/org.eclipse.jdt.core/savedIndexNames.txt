@@ -1,0 +1,15 @@
+INDEX VERSION 1.131+C:\Users\gchavezveloz\Documents\course-projects\Event Driven, Queues\.metadata\.plugins\org.eclipse.jdt.core
+2872068811.index
+558141242.index
+2757689019.index
+1017164828.index
+50959239.index
+2227901728.index
+1865797976.index
+2737914668.index
+2765828769.index
+726144992.index
+2541323066.index
+1402937795.index
+4193816698.index
+295446690.index
